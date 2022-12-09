@@ -13,12 +13,12 @@ I want to learn Front-end in RSSchool. I am a quick learner, have an inquisitive
 + JavaScript (Basic)
 + Git
 ## Code Example
-'''
+```
 function helloWorld(){
   var str="Hello World!"
   console.log(str)
 }
-'''
+```
 ## Education
 + Federal State Autonomous Educational Institution for Higher Education National Research Tomsk Polytechnic University
     * Information and measuring equipment and technologies
