@@ -1,3 +1,155 @@
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; 
+}
+
+body {
+  max-width: 1440px;
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  color: #E2E8F0;
+  background-color: #0F172A;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  position: relative;
+  height: 250px;
+  left: 0px;
+}
+
+.header-1 {
+  position: absolute;
+  width: 100%;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+}
+
+.border {
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  left: 0px;
+  top: 250px;
+
+  border: 0.5px solid #334155;
+}
+
+.gradient {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  left: 0;
+  top: -152.78px;
+
+  background: conic-gradient(from 182.43deg at 50% 50%, #FE79B9 0deg, #AD00FF 150deg, #2489FF 360deg);
+  opacity: 0.92;
+  filter: blur(60px);
+  transform: rotate(-6.02deg);
+}
+
+.header-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  top: 10px;
+
+  position: absolute;
+
+  z-index: 1;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 0 45px;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  transition: color 0.15s ease-in;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #AD00FF;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+
+  position: relative;
+  width: 600px;
+  height: 200px;
+
+  border: 1px solid red;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 35px;
+  margin-top: 50px;
+
+border: 1px solid red
+}
+
+.info-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 60px;
+  list-style-type: none;
+  margin: 0;
+  width: 500px;
+
+border: 1px solid red
+}
+
+.info-link {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+
+p {
+  margin: 0;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  border: 1px solid red;
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
   }
+}
