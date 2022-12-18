@@ -14,12 +14,12 @@ html {
 }
 
 body {
+  padding: 0;
   font-family: 'Plus Jakarta Sans';
   font-style: normal;
   line-height: 20px;
   color: #E2E8F0;
   background-color: #0F172A;
-  padding: 0;
 }
 
 .header {
@@ -42,7 +42,6 @@ body {
   height: 0px;
   left: 0px;
   top: 200px;
-
   border: 0.5px solid #334155;
 }
 
@@ -60,16 +59,14 @@ body {
 }
 
 .header-content {
+  position: absolute;
+  z-index: 1;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0px;
   top: 10px;
-
-  position: absolute;
-
-  z-index: 1;
 }
 
 .nav-list {
@@ -83,10 +80,10 @@ body {
 }
 
 .nav-link {
-  color: #E2E8F0;
-  text-decoration: none;
   font-size: 20px;
   font-weight: 500;
+  color: #E2E8F0;
+  text-decoratino: none;
   transition: color 0.15s ease-in;
 }
 
@@ -96,40 +93,40 @@ body {
 }
 
 .user {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
-
   position: relative;
   width: 600px;
   height: 200px;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
+  margin-top: 50px;
+  line-height: 35px;
   font-weight: 800;
   font-size: 50px;
-  line-height: 35px;
-  margin-top: 50px;
 }
 
 .info-list {
+  padding: 0;
+  margin: 0;
+  width: 500px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  padding: 0px;
   gap: 60px;
   list-style-type: none;
-  margin: 0;
-  width: 500px;
 }
 
 .info-link {
+  padding: 0px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 0px;
   gap: 8px;
   transition: color 0.15s ease-in;
   text-decoration: none;
@@ -150,16 +147,15 @@ h1 {
 }
 
 main section {
+  margin: 0;
   display: flex;
   gap: 40px;
-  margin: 0;
 }
 
 h2 {
+  width: 200px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 11px;
-  width: 200px;
 }
 
 .skill-item,
@@ -173,23 +169,23 @@ h2 {
 }
 
 .container-footer {
+  margin: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 0;
 }
 
 .social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 4px 8px;
-  gap: 2px;
-
   width: 120px;
   height: 25px;
   left: 181px;
   top: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
 
   background: #F2F2F2;
   border: 0.5px solid #222222;
@@ -197,16 +193,16 @@ h2 {
 }
 
 .curs-link {
+  width: 150px;
+  height: 50px;
+  left: 181px;
+  top: 15px;
+
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 4px 8px;
   gap: 2px;
-
-  width: 150px;
-  height: 50px;
-  left: 181px;
-  top: 15px;
 
   background: #F2F2F2;
   border: 0.5px solid #222222;
