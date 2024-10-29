@@ -29,5 +29,5 @@ console.log(str)
     * FreeCodeCamp
 ## Languages:
 * Russian - native speaker.
-* English – A1
+* English – A2
 * Spanish - A1
