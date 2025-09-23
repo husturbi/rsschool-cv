@@ -1,8 +1,7 @@
 * {
     box-sizing: border-box;
-    font-family: Mulish;
-    font-style: normal;
-    line-height: normal;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -14,29 +13,33 @@ a {
     text-decoration: none;
 }
 
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 .header {
     height: 60px;
     background: #222222;
 }
 
 .header-box {
-    max-width: 1440px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
 }
+
 .header-logo {
     margin: 20px;
 }
+
 .header-nav a {
-    margin:0 20px;
+    margin: 18px 20px;
 
     font-family: "Oswald", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 16px;
-    line-height: 150%;
-    text-transform: uppercase;
+    /*line-height: 150%;*/
     color: #FFFFFF;
 
     cursor: pointer;
@@ -44,4 +47,146 @@ a {
 
 .header-nav a:hover {
     color: #ff3c3c;
+}
+
+.hero {
+    height: 862px;
+    background: #222222;
+}
+
+.hero-box {
+    height: 862px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.hero-achievement {
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.hero-achievement p {
+    font-family: "Mulish", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 133%;
+    color: #FFFFFF;
+
+    white-space: nowrap;
+    transform: rotate(-90deg);
+}
+
+.hero-achievement img {
+    width: 1px;
+    height: 608px;
+}
+
+.hero-description {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+.hero-description--main {
+    margin: 160px 0;
+    max-width: 740px;
+}
+
+.hero-description--count {
+    display: flex;
+    gap: 60px;
+}
+
+.count {
+    display: flex;
+    gap: 8px;
+}
+
+.count-title {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 112%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.count-text {
+    margin-top: 8px;
+    font-family: "Mulish", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.hero-title {
+    margin: 40px 0;
+
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 116px;
+    line-height: 114%;
+    color: #FFFFFF;
+}
+
+.hero-title--text {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.scrolldown {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.scrolldown p{
+    font-family: "Mulish", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.hero-description-image {
+    align-self: center;
+}
+
+.hero-description-image img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+}
+
+.hero-description-foto {
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.hero-description-foto,
+.hero-description-foto img {
+    width: 280px;
+}
+
+.hero-description-foto p {
+    max-width: 220px;
+    font-family: "Mulish", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: right;
+    color: #FFFFFF;
 }
