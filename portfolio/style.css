@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    font-family: Mulish;
+    font-style: normal;
+    line-height: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    height: 60px;
+    background: #222222;
+}
+
+.header-box {
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.header-logo {
+    margin: 20px;
+}
+.header-nav a {
+    margin:0 20px;
+
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    cursor: pointer;
+}
+
+.header-nav a:hover {
+    color: #ff3c3c;
+}
