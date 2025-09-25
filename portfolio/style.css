@@ -63,6 +63,7 @@ a {
 
 .hero-achievement {
     width: 60px;
+    /*height: 862px;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,12 +79,13 @@ a {
     color: #FFFFFF;
 
     white-space: nowrap;
-    transform: rotate(-90deg);
+    writing-mode: sideways-lr;
 }
 
-.hero-achievement img {
+.hero-line {
     width: 1px;
     height: 608px;
+    background-color: #FFFFFF;
 }
 
 .hero-description {
@@ -150,7 +152,17 @@ a {
     cursor: pointer;
 }
 
-.scrolldown p{
+.scrolldown:hover {
+    p {
+        color: #ff3c3c;
+    }
+
+    svg path {
+        stroke: #ff3c3c;
+    }
+}
+
+.scrolldown p {
     font-family: "Mulish", sans-serif;
     font-weight: 400;
     font-size: 16px;
