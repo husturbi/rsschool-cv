@@ -13,7 +13,8 @@ a {
     margin: 0 auto;
 }
 
-.header {
+.header,
+.hero {
     background: #222222;
 }
 
@@ -45,11 +46,6 @@ a {
 
 .header-burger {
     display: none;
-}
-
-.hero {
-    height: 862px;
-    background: #222222;
 }
 
 .hero-box {
@@ -94,8 +90,8 @@ a {
 
     display: grid;
     grid-template-columns: 740px 220px 280px;
+    grid-auto-rows: 862px;
     grid-column-gap: 40px;
-    
 }
 
 .hero-description--main {
@@ -184,15 +180,12 @@ h1 {
 }
 
 .hero-description-foto {
+    max-width: 280px;
     padding: 60px 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-}
-
-.hero-description-foto {
-    max-width: 280px;
 }
 
 .hero-description-foto img {
@@ -209,6 +202,21 @@ h1 {
     line-height: 150%;
     text-align: right;
     color: #FFFFFF;
+}
+
+.about-box {
+    padding: 60px 20px;
+    display: flex;
+    gap: 40px;
+}
+
+.about-card img {
+    max-width: 440px;
+    height: 440px;
+    object-fit: cover;
+    /*width: 100%;
+    height: auto;
+    object-fit: contain;*/
 }
 
 @media (max-width: 1390px) {
@@ -242,7 +250,6 @@ h1 {
         gap: 8px;
 
         cursor: pointer;
-        
     }
 
     .burger-line-first {
@@ -255,10 +262,6 @@ h1 {
         width: 20px;
         height: 2px;
         background: #FFFFFF;
-    }
-    
-    .hero {
-        height: 758px;
     }
 
     .hero-first-text {
@@ -275,10 +278,44 @@ h1 {
 
     .hero-description {
         grid-template-columns: 408px 220px;
+        grid-auto-rows: 758px;
         grid-column-gap: 20px;
     }
 
+    h1 {
+        font-size: calc(56px + 12 * (100vw - 380px) / 389);
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-description {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 20px;
+    }
+
+    .hero-achievement {
+        display: none;
+    }
+
+    .hero-description--main {
+        margin: 60px 0 0 0;
+    }
+
+    .scrolldown {
+        display: none;
+    }
+
     .hero-description-foto {
-    padding-bottom: 0;
+        padding: 0;
+    }
+
+    .hero-description-foto img {
+        width: 220px;
+    }
+
+    .hero-description-foto p {
+        margin: 60px 0;
     }
 }
