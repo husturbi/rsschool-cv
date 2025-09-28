@@ -14,8 +14,16 @@ a {
 }
 
 .header,
-.hero {
+.hero,
+.slider {
     background: #222222;
+}
+
+p {
+    font-family: "Mulish", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
 }
 
 .header-box {
@@ -162,10 +170,6 @@ h1 {
 }
 
 .scrolldown p {
-    font-family: "Mulish", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
     color: #FFFFFF;
 }
 
@@ -196,16 +200,12 @@ h1 {
 
 .hero-description-foto p {
     max-width: 220px;
-    font-family: "Mulish", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
     text-align: right;
     color: #FFFFFF;
 }
 
 .about-box {
-    padding: 60px 20px;
+    padding: 60px 20px 20px 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -225,10 +225,6 @@ h1 {
 
 .about-card p {
     margin-bottom: 40px;
-    font-family: "Mulish", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
     color: #222222;
 }
 
@@ -239,6 +235,90 @@ h3 {
     font-size: 32px;
     line-height: 125%;
     color: #222222;
+}
+
+.slider {
+    padding: 60px 0;
+}
+
+/*.slider .container {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}*/
+
+.slider h3 {
+    margin-left: 20px;
+    color: #FFFFFF;
+}
+
+.slider p {
+    width: 360px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    color: #FFFFFF;
+}
+
+.slider-wrapper {
+    overflow: hidden;
+}
+
+.slider-items {
+    height: 654px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.slider-item-1 img,
+.slider-item-4 img,
+.slider-item-8 img,
+.slider-item-12 img {
+    width: 400x;
+    height: 534px;
+    object-fit: cover;
+}
+
+.slider-item-2 img,
+.slider-item-6 img,
+.slider-item-9 img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+}
+
+.slider-item-3 img,
+.slider-item-5 img,
+.slider-item-7 img,
+.slider-item-10 img,
+.slider-item-11 img {
+    width: 280px;
+    height: 374px;
+    object-fit: cover;
+}
+
+.slider-item-1,
+.slider-item-8 {
+    align-self: flex-end;
+}
+
+.slider-item-4,
+.slider-item-7,
+.slider-item-10,
+.slider-item-12 {
+    align-self: start;
+}
+
+.slider-item-2,
+.slider-item-6,
+.slider-item-9 {
+    align-self: center;
+}
+
+.slider-item-3,
+.slider-item-5,
+.slider-item-11 {
+    padding-top: 120px;
 }
 
 @media (max-width: 1390px) {
