@@ -15,7 +15,7 @@ a {
 
 .header,
 .hero,
-.slider {
+.portfolio {
     background: #222222;
 }
 
@@ -24,6 +24,16 @@ p {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
+    color: #222222;
+}
+
+h3 {
+    margin-bottom: 12px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 125%;
+    color: #222222;
 }
 
 .header-box {
@@ -225,33 +235,20 @@ h1 {
 
 .about-card p {
     margin-bottom: 40px;
-    color: #222222;
 }
 
-h3 {
-    margin-bottom: 12px;
-    font-family: "Oswald", sans-serif;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 125%;
-    color: #222222;
-}
 
-.slider {
+
+.portfolio {
     padding: 60px 0;
 }
 
-/*.slider .container {
-    margin-left: 20px;
-    margin-bottom: 20px;
-}*/
-
-.slider h3 {
+.portfolio h3 {
     margin-left: 20px;
     color: #FFFFFF;
 }
 
-.slider p {
+.portfolio p {
     width: 360px;
     margin-left: 20px;
     margin-bottom: 40px;
@@ -319,6 +316,81 @@ h3 {
 .slider-item-5,
 .slider-item-11 {
     padding-top: 120px;
+}
+
+.price .container {
+    padding: 60px 20px;
+}
+
+.price-wrapper {
+    margin-top: 39px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.price-card {
+    border: 1px solid #222222;
+    padding: 23px;
+    width: 320px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.price-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+h4 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: #222222;
+}
+
+.price-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.price-list p::before {
+    content: "◾️";
+    margin-right: 4px;
+}
+
+.price-card-button p {
+    font-family: "Mulish", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    color: #222222;
+}
+
+button{
+    padding: 0px 20px;
+    margin-top: 12px;
+    width: 272px;
+    height: 60px;
+    min-width: 200px;
+    background-color: #222222;
+    border: none;
+
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+
+    cursor: pointer;
 }
 
 @media (max-width: 1390px) {
@@ -394,7 +466,7 @@ h3 {
     }
 
     .about-card {
-        width: 728px;
+        width: calc(728px + 388 * ((100vw - 769px) / 389));
     }
 
     .about-card img {
@@ -406,6 +478,14 @@ h3 {
 
     .about-card p {
         margin-bottom: 40px;
+    }
+
+    .image-hidden {
+        display: none;
+    }
+
+    .price-wrapper {
+        gap: 20px;
     }
 }
 
@@ -440,4 +520,16 @@ h3 {
     .hero-description-foto p {
         margin: 60px 0;
     }
+
+    .about-card img {
+        width: 340px;
+        height: 340px;
+    }
+
+    .portfolio p {
+    width: 340px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    color: #FFFFFF;
+}
 }
