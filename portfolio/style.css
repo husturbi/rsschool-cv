@@ -15,7 +15,9 @@ a {
 
 .header,
 .hero,
-.portfolio {
+.portfolio,
+.FAQ,
+.footer-nav {
     background: #222222;
 }
 
@@ -47,8 +49,9 @@ h3 {
     margin: 20px;
 }
 
-.header-nav a {
-    margin: 18px 20px;
+.header-nav a,
+.footer-item {
+    margin: 18px 19px;
 
     font-family: "Oswald", sans-serif;
     font-weight: 300;
@@ -58,7 +61,8 @@ h3 {
     cursor: pointer;
 }
 
-.header-nav a:hover {
+.header-nav a:hover,
+.footer-item:hover {
     color: #ff3c3c;
 }
 
@@ -237,8 +241,6 @@ h1 {
     margin-bottom: 40px;
 }
 
-
-
 .portfolio {
     padding: 60px 0;
 }
@@ -362,7 +364,7 @@ h4 {
 
 .price-list p::before {
     content: "◾️";
-    margin-right: 4px;
+    margin-right: 3px;
 }
 
 .price-card-button p {
@@ -374,7 +376,7 @@ h4 {
     color: #222222;
 }
 
-button{
+button {
     padding: 0px 20px;
     margin-top: 12px;
     width: 272px;
@@ -391,6 +393,94 @@ button{
     color: #FFFFFF;
 
     cursor: pointer;
+}
+
+.price-card:hover {
+    .price-card {
+        border: 1px solid #FF3C3C;
+    }
+
+    button {
+        background-color: #FF3C3C;
+    }
+
+    svg path {
+        stroke: #ff3c3c;
+    }
+}
+
+.FAQ-box {
+    padding: 60px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+}
+
+.FAQ-item {
+    box-sizing: content-box;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.FAQ-items h4 {
+    padding: 18px 0 17px 0;
+}
+
+.FAQ-items p {
+    padding-bottom: 20px;
+}
+
+.FAQ-descriptoin h3,
+.FAQ-descriptoin p,
+.FAQ-items h4,
+.FAQ-items p {
+    color: #FFFFFF;
+}
+
+.FAQ-item-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.FAQ-item:hover {
+    h4 {
+        color: #FF3C3C;
+    }
+
+    svg path {
+        stroke: #ff3c3c;
+    }
+}
+
+.footer-registration h4 {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.form-registration {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+input {
+    width: calc();
+}
+
+.form-registration button {
+    margin-top: 0;
+    width: 200px;
+}
+
+.footer-nav {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 1390px) {
@@ -486,6 +576,10 @@ button{
 
     .price-wrapper {
         gap: 20px;
+    }
+
+    .FAQ-box {
+        grid-template-columns: 1fr;
     }
 }
 
