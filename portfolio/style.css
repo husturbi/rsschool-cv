@@ -4,8 +4,20 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     text-decoration: none;
+    margin: 18px 19px;
+
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #FFFFFF;
+    transition: color 0.5s ease-in-out;
+    cursor: pointer;
 }
 
 .container {
@@ -47,18 +59,6 @@ h3 {
 
 .header-logo {
     margin: 20px;
-}
-
-.header-nav a,
-.footer-item {
-    margin: 18px 19px;
-
-    font-family: "Oswald", sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    color: #FFFFFF;
-
-    cursor: pointer;
 }
 
 .header-nav a:hover,
@@ -391,21 +391,15 @@ button {
     line-height: 150%;
     text-align: center;
     color: #FFFFFF;
-
     cursor: pointer;
 }
 
 .price-card:hover {
-    .price-card {
-        border: 1px solid #FF3C3C;
-    }
+    border-color: #FF3C3C;
 
     button {
         background-color: #FF3C3C;
-    }
-
-    svg path {
-        stroke: #ff3c3c;
+        color: #222222;
     }
 }
 
@@ -444,7 +438,7 @@ button {
     cursor: pointer;
 }
 
-.FAQ-item:hover {
+.FAQ-item-title:hover {
     h4 {
         color: #FF3C3C;
     }
@@ -460,7 +454,7 @@ button {
 }
 
 .form-registration {
-    margin: 20px 0;
+    margin: 20px 20px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -468,7 +462,36 @@ button {
 }
 
 input {
-    width: calc();
+    width: 380px;
+    height: 60px;
+    border: 1px solid #222222;
+    padding: 0px 12px;
+}
+
+input::placeholder {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.input-name::placeholder {
+    color: #989898;
+}
+
+.input-tel::placeholder {
+    color: #222222;
+}
+
+input:hover {
+    outline: 1px solid #FF3C3C;
+    border-color: #FF3C3C;
+}
+
+input:focus,
+input:active {
+    outline: 1px solid #FF3C3C;
+    border-color: #FF3C3C;
 }
 
 .form-registration button {
@@ -476,11 +499,20 @@ input {
     width: 200px;
 }
 
-.footer-nav {
-    height: 100px;
+.form-registration button:hover {
+    background-color: #FF3C3C;
+    color: #222222;
+}
+
+.footer-nav-wrapper {
+    padding: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+}
+
+.footer-item {
+    margin: 18px 21px;
 }
 
 @media (max-width: 1390px) {
@@ -494,6 +526,10 @@ input {
 
     .image-hidden {
         display: none;
+    }
+
+    input {
+        width: 256px;
     }
 }
 
@@ -621,9 +657,76 @@ input {
     }
 
     .portfolio p {
-    width: 340px;
-    margin-left: 20px;
-    margin-bottom: 40px;
-    color: #FFFFFF;
+        width: 340px;
+        margin-left: 20px;
+        margin-bottom: 40px;
+        color: #FFFFFF;
+    }
+
+    .form-registration {
+        margin: 20px 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input {
+        width: 340px;
+    }
+
+    .form-registration button {
+        width: 340px;
+    }
 }
+
+@media (max-width: 382px) {
+    .footer-nav-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (hover: none) and (pointer: coarse) {
+    .header-nav a:hover,
+    .footer-item:hover {
+        color: inherit;
+    }
+
+    .scrolldown:hover {
+        p {
+            color: inherit;
+        }
+
+        svg path {
+            stroke: inherit;
+        }
+    }
+
+    .price-card:hover {
+        border-color: inherit;
+
+        button {
+            background-color: #222222;
+            color: #FFFFFF;
+        }
+    }
+
+    .FAQ-item-title:hover {
+        h4 {
+            color: #FFFFFF;
+        }
+
+        svg path {
+            stroke: inherit;
+        }
+    }
+
+    input:hover {
+        outline: inherit;
+        border-color: inherit;
+    }
+
+    .form-registration button:hover {
+        background-color: #222222;
+        color: #FFFFFF;
+    }
 }
