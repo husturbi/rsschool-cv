@@ -708,7 +708,7 @@ input:active {
 
     .scrolldown:hover {
         p {
-            color: inherit;
+            color: #FFFFFF;
         }
 
         svg path {
