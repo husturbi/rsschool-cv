@@ -1,20 +1,20 @@
-function Accordeon() {
-    const accordeonItems = document.querySelectorAll('.FAQ-item');
+function Accordion() {
+    const accordionItems = document.querySelectorAll('.FAQ-item');
 
-    accordeonItems.forEach(accordeonItem => {
-        let title = accordeonItem.querySelector('.FAQ-item-title');
+    accordionItems.forEach(accordionItem => {
+        let title = accordionItem.querySelector('.FAQ-item-title');
         
         title.addEventListener('click', event => {
-            accordeonItems.forEach(Item => {
+            accordionItems.forEach(Item => {
                 if (Item.classList.contains('active')) {
                     Item.classList.remove('show');
                 }
             });
 
-            accordeonItem.classList.toggle('show');
-            accordeonItem.classList.add('active');
+            accordionItem.classList.toggle('show');
+            accordionItem.classList.add('active');
         });
     });
 }
 
-Accordeon();
+Accordion();

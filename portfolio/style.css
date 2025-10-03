@@ -55,6 +55,14 @@ svg {
     transition: stroke 0.5s linear;
 }
 
+input {
+    height: 60px;
+    border: 1px solid #222222;
+    padding: 0px 12px;
+    transition: outline 0.5s linear;
+    transition: border-color 0.5s linear;
+}
+
 .header-box {
     height: 60px;
     display: flex;
@@ -511,6 +519,60 @@ button {
     }
 }
 
+
+.modal__overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #989898;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__overlay.open {
+    display: flex;
+}
+
+.modal {
+    width: 100%;
+    max-width: 500px;
+    background: #FFFFFF;
+}
+
+.modal__header {
+    margin-bottom: 12px;
+}
+
+.modal__header--close {
+    width: 60px;
+    height: 60px;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.modal__header h4 {
+    text-align: center;
+}
+
+.modal__body .form-registration {
+    margin-bottom: 60px;
+}
+
+.modal__input-name,
+.modal__input-tel {
+    width: 380px;
+}
+
+.modal__body .form-registration button {
+    width: 380px;
+}
+
 .footer-registration h4 {
     margin-top: 40px;
     text-align: center;
@@ -524,13 +586,9 @@ button {
     gap: 8px;
 }
 
-input {
+.input-name,
+.input-tel {
     width: 380px;
-    height: 60px;
-    border: 1px solid #222222;
-    padding: 0px 12px;
-    transition: outline 0.5s linear;
-    transition: border-color 0.5s linear;
 }
 
 input::placeholder {
@@ -594,7 +652,8 @@ input:active {
         display: none;
     }
 
-    input {
+    .input-name,
+    .input-tel {
         width: 256px;
     }
 }

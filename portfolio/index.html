@@ -9,6 +9,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./scripts/accordion.js" defer></script>
+    <script src="./scripts/modal.js" defer></script>
     <link rel="icon" href="./assets/icons/icon.png" type="image/png">
 </head>
 <body>
@@ -169,7 +170,7 @@
                         </div>
                         <div class="price-card-button">
                             <p>For short sessions and quick results</p>
-                            <button type="button">BOOK NOW</button>
+                            <button type="button" class="button-price">BOOK NOW</button>
                         </div>
                     </div>
                     <div class="price-card">
@@ -188,7 +189,7 @@
                         </div>
                         <div class="price-card-button">
                             <p>Perfect for couples, portraits, or lifestyle</p>
-                            <button type="button">BOOK NOW</button>
+                            <button type="button" class="button-price">BOOK NOW</button>
                         </div>
                     </div>
                     <div class="price-card">
@@ -208,7 +209,7 @@
                         </div>
                         <div class="price-card-button">
                             <p>For when you want to capture everything</p>
-                            <button type="button">BOOK NOW</button>
+                            <button type="button" class="button-price">BOOK NOW</button>
                         </div>
                     </div>
                     <div class="price-card">
@@ -228,7 +229,7 @@
                         </div>
                         <div class="price-card-button">
                             <p>Full-day or partial wedding coverage</p>
-                            <button type="button">BOOK NOW</button>
+                            <button type="button" class="button-price">BOOK NOW</button>
                         </div>
                     </div>
                 </div>
@@ -319,6 +320,23 @@
             </div>
         </section>
     </main>
+    <div class="modal__overlay">
+        <div class="modal">
+                <div class="modal__header">
+                    <div class="modal__header--close">
+                        <img src="./assets/icons/close.svg" alt="close">
+                    </div>
+                    <h4 class="modal__header--title">LIKE MY PORTFOLIO? SIGH UP FOR A SHOOT!</h4>
+                </div>
+                <div class="modal__body">
+                    <form action="#" method="get" class="form-registration">
+                        <input class="modal__input-name" type="text" placeholder="YOUR NAME">
+                        <input class="modal__input-tel" type="tel" placeholder="+1">
+                        <button type="submit">BOOK NOW</button>
+                    </form>
+                </div>
+        </div>
+    </div>
     <footer>
         <div class="footer-registration">
             <div class="container">
