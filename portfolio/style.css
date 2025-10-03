@@ -429,6 +429,7 @@ button {
     grid-template-columns: 1fr 1fr;
     grid-gap: 40px;
 }
+
 .FAQ-item {
     box-sizing: content-box;
     border-bottom: 1px solid #FFFFFF;
@@ -518,7 +519,6 @@ button {
         color: #FF3C3C;
     }
 }
-
 
 .modal__overlay {
     display: none;

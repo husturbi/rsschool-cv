@@ -5,15 +5,18 @@ function Accordion() {
         let title = accordionItem.querySelector('.FAQ-item-title');
         
         title.addEventListener('click', event => {
+            accordionItem.classList.toggle('show');
+            accordionItem.classList.add('active');
+
             accordionItems.forEach(Item => {
-                if (Item.classList.contains('active')) {
+                if (!Item.classList.contains('active')) {
                     Item.classList.remove('show');
                 }
             });
 
-            accordionItem.classList.toggle('show');
-            accordionItem.classList.add('active');
+            accordionItem.classList.remove('active');
         });
+
     });
 }
 
