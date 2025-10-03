@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./scripts/accordion.js" defer></script>
     <link rel="icon" href="./assets/icons/icon.png" type="image/png">
 </head>
 <body>
@@ -241,69 +242,76 @@
                         <p>Everything You Wanted to Ask (and a Bit More)</p>
                     </div>
                     <div class="FAQ-items">
-                        <div class="FAQ-item">
+                        <div class="FAQ-item show active">
                             <div class="FAQ-item-title">
                                 <h4>HOW DO I BOOK A SHOOT?</h4>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19 11.25C19.4142 11.25 19.75 11.5858 19.75 12C19.75 12.4142 19.4142 12.75 19 12.75H5C4.58579 12.75 4.25 12.4142 4.25 12C4.25 11.5858 4.58579 11.25 5 11.25H19Z" fill="white" />
-                                </svg>
+                                <div class="FAQ-title-icon"></div>
                             </div>
-                            <p>Super simple – just message me through any convenient platform (Instagram, Telegram, WhatsApp, or the contact form on this site). We’ll discuss your preferred date, city, and session type. Once confirmed, I’ll reserve the date for you and send over preparation tips.</p>
+                            <div class="FAQ-item-answere">
+                                <p>Super simple – just message me through any convenient platform (Instagram, Telegram, WhatsApp, or the contact form on this site). We’ll discuss your preferred date, city, and session type. Once confirmed, I’ll reserve the date for you and send over preparation tips.</p>
+                            </div>
                         </div>
                         <div class="FAQ-item">
                             <div class="FAQ-item-title">
                                 <h4>CAN I CHOOSE THE LOCATION MYSELF?</h4>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 4.25C12.4142 4.25 12.75 4.58579 12.75 5V11.25H19C19.4142 11.25 19.75 11.5858 19.75 12C19.75 12.4142 19.4142 12.75 19 12.75H12.75V19C12.75 19.4142 12.4142 19.75 12 19.75C11.5858 19.75 11.25 19.4142 11.25 19V12.75H5C4.58579 12.75 4.25 12.4142 4.25 12C4.25 11.5858 4.58579 11.25 5 11.25H11.25V5C11.25 4.58579 11.5858 4.25 12 4.25Z" fill="white" />
-                                </svg>
+                                <div class="FAQ-title-icon"></div>
+                            </div>
+                            <div class="FAQ-item-answere">
+                                <p>Absolutely! If there’s a special place you love or have in mind — I’m happy to shoot there. If you’re unsure, I can suggest beautiful spots with great lighting and atmosphere, tailored to your vision and mood.</p>
                             </div>
                         </div>
                         <div class="FAQ-item">
                             <div class="FAQ-item-title">
                                 <h4>HOW LONG DOES THE SHOOT TAKE?</h4>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 4.25C12.4142 4.25 12.75 4.58579 12.75 5V11.25H19C19.4142 11.25 19.75 11.5858 19.75 12C19.75 12.4142 19.4142 12.75 19 12.75H12.75V19C12.75 19.4142 12.4142 19.75 12 19.75C11.5858 19.75 11.25 19.4142 11.25 19V12.75H5C4.58579 12.75 4.25 12.4142 4.25 12C4.25 11.5858 4.58579 11.25 5 11.25H11.25V5C11.25 4.58579 11.5858 4.25 12 4.25Z" fill="white" />
-                                </svg>
+                                <div class="FAQ-title-icon"></div>
+                            </div>
+                            <div class="FAQ-item-answere">
+                                <p>That depends on the package you choose. On average, sessions last from 1 to 4 hours. We’ll plan the pace and type of shoot together — from relaxed city strolls and love stories to more dynamic or editorial sessions.</p>
                             </div>
                         </div>
                         <div class="FAQ-item">
                             <div class="FAQ-item-title">
                                 <h4>WHEN WILL I RECEIVE THE PHOTOS?</h4>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 4.25C12.4142 4.25 12.75 4.58579 12.75 5V11.25H19C19.4142 11.25 19.75 11.5858 19.75 12C19.75 12.4142 19.4142 12.75 19 12.75H12.75V19C12.75 19.4142 12.4142 19.75 12 19.75C11.5858 19.75 11.25 19.4142 11.25 19V12.75H5C4.58579 12.75 4.25 12.4142 4.25 12C4.25 11.5858 4.58579 11.25 5 11.25H11.25V5C11.25 4.58579 11.5858 4.25 12 4.25Z" fill="white" />
-                                </svg>
+                                <div class="FAQ-title-icon"></div>
+                            </div>
+                            <div class="FAQ-item-answere">
+                                <p>You’ll receive your edited photos within 7–14 days. For event and wedding sessions — up to 30 days. I deliver them in a stylish online gallery, where you can download them in full quality or easily share with friends and family.</p>
                             </div>
                         </div>
                         <div class="FAQ-item">
                             <div class="FAQ-item-title">
                                 <h4>WILL YOU HELP ME POSE?</h4>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 4.25C12.4142 4.25 12.75 4.58579 12.75 5V11.25H19C19.4142 11.25 19.75 11.5858 19.75 12C19.75 12.4142 19.4142 12.75 19 12.75H12.75V19C12.75 19.4142 12.4142 19.75 12 19.75C11.5858 19.75 11.25 19.4142 11.25 19V12.75H5C4.58579 12.75 4.25 12.4142 4.25 12C4.25 11.5858 4.58579 11.25 5 11.25H11.25V5C11.25 4.58579 11.5858 4.25 12 4.25Z" fill="white" />
-                                </svg>
+                                <div class="FAQ-title-icon"></div>
+                            </div>
+                            <div class="FAQ-item-answere">
+                                <p>Definitely! I’ll guide you gently throughout the session — where to look, how to move, how to relax. The goal is to make you feel comfortable and natural. My approach is relaxed, and I’ll never force awkward poses. The result? Real, expressive, and beautiful photos.</p>
                             </div>
                         </div>
                         <div class="FAQ-item">
                             <div class="FAQ-item-title">
                                 <h4>WHAT SHOULD I WEAR?</h4>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 4.25C12.4142 4.25 12.75 4.58579 12.75 5V11.25H19C19.4142 11.25 19.75 11.5858 19.75 12C19.75 12.4142 19.4142 12.75 19 12.75H12.75V19C12.75 19.4142 12.4142 19.75 12 19.75C11.5858 19.75 11.25 19.4142 11.25 19V12.75H5C4.58579 12.75 4.25 12.4142 4.25 12C4.25 11.5858 4.58579 11.25 5 11.25H11.25V5C11.25 4.58579 11.5858 4.25 12 4.25Z" fill="white" />
-                                </svg>
+                                <div class="FAQ-title-icon"></div>
+                            </div>
+                            <div class="FAQ-item-answere">
+                                <p> After booking, I’ll send you a style guide with suggestions for colors, textures, and combinations. The most important thing is that you feel confident in your outfit. I’m also happy to help you coordinate looks or plan something cohesive for couples or groups.</p>
                             </div>
                         </div>
                         <div class="FAQ-item">
                             <div class="FAQ-item-title">
                                 <h4>DO YOU RETOUCH THE PHOTOS?</h4>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 4.25C12.4142 4.25 12.75 4.58579 12.75 5V11.25H19C19.4142 11.25 19.75 11.5858 19.75 12C19.75 12.4142 19.4142 12.75 19 12.75H12.75V19C12.75 19.4142 12.4142 19.75 12 19.75C11.5858 19.75 11.25 19.4142 11.25 19V12.75H5C4.58579 12.75 4.25 12.4142 4.25 12C4.25 11.5858 4.58579 11.25 5 11.25H11.25V5C11.25 4.58579 11.5858 4.25 12 4.25Z" fill="white" />
-                                </svg>
+                                <div class="FAQ-title-icon"></div>
+                            </div>
+                            <div class="FAQ-item-answere">
+                                <p>Yes, all photos are color-corrected and lightly retouched. My editing style is clean and natural — no overdone filters or fake skin. Just you, at your best. Extra retouching is available upon request.</p>
                             </div>
                         </div>
                         <div class="FAQ-item">
                             <div class="FAQ-item-title">
                                 <h4>CAN I GET THE RAW FILES?</h4>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 4.25C12.4142 4.25 12.75 4.58579 12.75 5V11.25H19C19.4142 11.25 19.75 11.5858 19.75 12C19.75 12.4142 19.4142 12.75 19 12.75H12.75V19C12.75 19.4142 12.4142 19.75 12 19.75C11.5858 19.75 11.25 19.4142 11.25 19V12.75H5C4.58579 12.75 4.25 12.4142 4.25 12C4.25 11.5858 4.58579 11.25 5 11.25H11.25V5C11.25 4.58579 11.5858 4.25 12 4.25Z" fill="white" />
-                                </svg>
+                                <div class="FAQ-title-icon"></div>
+                            </div>
+                            <div class="FAQ-item-answere">
+                                <p> I don’t deliver RAW files. My work includes not only shooting, but also careful selection and editing to create a complete and polished result. You’ll receive only the best images, ready for printing, sharing, or publishing.</p>
                             </div>
                         </div>
                     </div>
@@ -325,11 +333,11 @@
         <div class="footer-nav" id="contacts">
             <div class="container">
                 <div class="footer-nav-wrapper">
-                    <a href="##" class="footer-item">INSTAGRAM</a>
-                    <a href="##" class="footer-item">TELEGRAM</a>
-                    <a href="##" class="footer-item">WHATSAPP</a>
-                    <a href="##" class="footer-item">EUROPE</a>
-                    <a href="##" class="footer-item">+1 234 9843572</a>
+                    <a href="" class="footer-item">INSTAGRAM</a>
+                    <a href="" class="footer-item">TELEGRAM</a>
+                    <a href="" class="footer-item">WHATSAPP</a>
+                    <a href="" class="footer-item">EUROPE</a>
+                    <a href="" class="footer-item">+1 234 9843572</a>
                 </div>
             </div>
         </div>

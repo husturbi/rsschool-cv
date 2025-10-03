@@ -421,14 +421,72 @@ button {
     grid-template-columns: 1fr 1fr;
     grid-gap: 40px;
 }
-
 .FAQ-item {
     box-sizing: content-box;
     border-bottom: 1px solid #FFFFFF;
+
+    display: grid;
+    grid-template-rows: min-content minmax(0, 0fr);
+    transition: all 0.35s ease;
+}
+
+.FAQ-item.show {
+    grid-template-rows: min-content minmax(0, 1fr);
+}
+
+.FAQ-item.show .FAQ-item-answere {
+    opacity: 1;
 }
 
 .FAQ-items h4 {
     padding: 18px 0 17px 0;
+}
+
+.FAQ-item-title {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.FAQ-title-icon {
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+
+.FAQ-title-icon::before {
+    content: "";
+    position: absolute;
+    width: 15.5px;
+    height: 1.5px;
+    background-color: #FFFFFF;
+    top: 11.25px;
+    left: 4.25px;
+    transition: all 0.3s ease;
+}
+
+.FAQ-title-icon::after {
+    content: "";
+    position: absolute;
+    width: 1.5px;
+    height: 15.5px;
+    background-color: #FFFFFF;
+    top: 4.25px;
+    left: 11.25px;
+    transition: all 0.3s ease;
+}
+
+.FAQ-item.show .FAQ-title-icon::after {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.FAQ-item-answere {
+    transition: var(--transition);
+    overflow: hidden;
+    opacity: 0;
 }
 
 .FAQ-items p {
@@ -442,21 +500,14 @@ button {
     color: #FFFFFF;
 }
 
-.FAQ-item-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    cursor: pointer;
-}
-
-.FAQ-item-title:hover {
-    h4 {
-        color: #FF3C3C;
+.FAQ-item:hover {
+    .FAQ-title-icon::after,
+    .FAQ-title-icon::before {
+        background-color: #FF3C3C;
     }
 
-    svg path {
-        stroke: #ff3c3c;
+    h4 {
+        color: #FF3C3C;
     }
 }
 
@@ -708,7 +759,7 @@ input:active {
 
     .scrolldown:hover {
         p {
-            color: inherit;
+            color: #FFFFFF;
         }
 
         svg path {
