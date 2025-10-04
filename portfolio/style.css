@@ -79,8 +79,18 @@ input {
     color: #ff3c3c;
 }
 
-.header-burger {
+.burger-button {
     display: none;
+}
+
+.burger-overlay {
+    display: none;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #222222;
 }
 
 .hero-box {
@@ -658,12 +668,12 @@ input:active {
     }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
     .header-nav {
         display: none;
     }
 
-    .header-burger {
+    .burger-button {
         padding-right: 20px;
         width: 60px;
         height: 60px;
@@ -687,6 +697,13 @@ input:active {
         width: 20px;
         height: 2px;
         background: #FFFFFF;
+    }
+
+    .burger-overlay.open {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .hero-first-text {
@@ -840,8 +857,9 @@ input:active {
             color: #FFFFFF;
         }
 
-        svg path {
-            stroke: inherit;
+        .FAQ-title-icon::before,
+        .FAQ-title-icon::after {
+            background-color: #FFFFFF;
         }
     }
 
