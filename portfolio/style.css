@@ -544,7 +544,7 @@ button {
     right: 0;
     bottom: 0;
     left: 0;
-    background: #989898;
+    background: rgba(34, 34, 34, 0.6);
     align-items: center;
     justify-content: center;
 }
@@ -697,17 +697,30 @@ input:active {
     .burger-line-first {
         width: 12px;
         height: 2px;
+        transition: transform 0.3s;
         background: #FFFFFF;
     }
 
     .burger-line-second {
         width: 20px;
         height: 2px;
+        transition: transform 0.3s;
         background: #FFFFFF;
     }
 
     .burger-overlay.open {
         right: 0;
+    }
+
+    .burger-button.active {
+        .burger-line-first {
+            width: 20px;
+            transform: rotate(45deg);
+        }
+
+        .burger-line-second {
+            transform: translateY(-10px) rotate(-45deg);
+        }
     }
 
     .hero-first-text {

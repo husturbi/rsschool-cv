@@ -16,11 +16,13 @@ const burgerFunc = () => {
 
     burgerBtn.addEventListener ('click', () => {
         burger.classList.toggle('open');
+        burgerBtn.classList.toggle('active');
         scrollWindow();
     });
     
     burger.addEventListener('click', () => {
         burger.classList.toggle('open');
+        burgerBtn.classList.toggle('active');
         scrollWindow();
     } )
 };
